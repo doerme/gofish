@@ -16,21 +16,21 @@
     </script>
   <link href="/mex/fish/css/app.css?v=84" rel="stylesheet"></head>
   <style>
-    .cube {
+    .page-main {
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0);
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
   </style>
-  <body onload="loadSound();">
+  <body class="" onload="loadSound();">
     <img src="/mex/fish/img/logo.png" style="display:none;" alt="">
     <div class="loading-page">
       <div class="loading-bg">
         <p></p>   
       </div>     
     </div>
-    <div id="app" class="cube"></div>
+    <div id="app"></div>
     <div style="display:none;">
       <img src="/mex/fish/img/yu-5-3.png" >
       <img src="/mex/fish/img/baoxiang.png" >            
