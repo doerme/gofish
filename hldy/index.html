@@ -16,6 +16,14 @@
         createjs.Sound.registerSound("//zjshop.tcpan.com/mex/fish/coin_music.wav", soundID);
       }
     </script>
+    <style>
+      .page-main {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    </style>
   <link href="/hldy/static/css/app.css" rel="stylesheet"></head>
   <body onload="loadSound();">
     <div class="loading-page">
@@ -25,44 +33,44 @@
     </div>
     <div id="app"></div>
      <div id="js-img-preload" style="display:none;">
-      <img src="../static/img/yu-5-3.png" >
-      <img src="../static/img/baoxiang.png" >            
-      <img src="../static/img/chugan.png" >              
-      <img src="../static/img/num-6.png" >               
-      <img src="../static/img/yu-2-2.png" >              
-      <img src="../static/img/yu-6-2.png" >              
-      <img src="../static/img/yu-8-3.png" >
-      <img src="../static/img/bg-2.png" >
-      <img src="../static/img/dialog-box.png" >          
-      <img src="../static/img/num-8.png" >              
-      <img src="../static/img/yu-3.png" >                
-      <img src="../static/img/yu-6-3.png" >              
-      <img src="../static/img/yu-8.png" >
-      <img src="../static/img/bg.png" >                  
-      <img src="../static/img/guanxian-1.png" >          
-      <img src="../static/img/num-9.png" >               
-      <img src="../static/img/yu-4-2.png" >              
-      <img src="../static/img/yu-6.png" >
-      <img src="../static/img/bizhikuang.png" >          
-      <img src="../static/img/loading-bg.png" >          
-      <img src="../static/img/rule-butn.png" >          
-      <img src="../static/img/yu-4.png" >                
-      <img src="../static/img/yu-7-2.png" >
-      <img src="../static/img/butn-rule-home.png" >      
-      <img src="../static/img/muban.png" >               
-      <img src="../static/img/rule.jpg" >                
-      <img src="../static/img/yu-5-2.png" >              
-      <img src="../static/img/yu-7-3.png" >
-      <img src="../static/img/butn-tuoguan.png" >        
-      <img src="../static/img/num-0.png" >               
-      <img src="../static/img/tuoguan.png" >             
-      <img src="../static/img/yu-5-3.png" >              
-      <img src="../static/img/yu-7.png" >
-      <img src="../static/img/chugan-bg.png" >           
-      <img src="../static/img/num-3.png" >               
-      <img src="../static/img/yu-1-2.png" >              
-      <img src="../static/img/yu-5.png" >                
-      <img src="../static/img/yu-8-2.png" >
+      <img src="http://zjshop.tcpan.com/mex/fish/img/yu-5-3.png" >
+      <img src="http://zjshop.tcpan.com/mex/fish/img/baoxiang.png" >            
+      <img src="http://zjshop.tcpan.com/mex/fish/img/chugan.png" >              
+      <img src="http://zjshop.tcpan.com/mex/fish/img/num-6.png" >               
+      <img src="http://zjshop.tcpan.com/mex/fish/img/yu-2-2.png" >              
+      <img src="http://zjshop.tcpan.com/mex/fish/img/yu-6-2.png" >              
+      <img src="http://zjshop.tcpan.com/mex/fish/img/yu-8-3.png" >
+      <img src="http://zjshop.tcpan.com/mex/fish/img/bg-2.png" >
+      <img src="http://zjshop.tcpan.com/mex/fish/img/dialog-box.png" >          
+      <img src="http://zjshop.tcpan.com/mex/fish/img/num-8.png" >              
+      <img src="http://zjshop.tcpan.com/mex/fish/img/yu-3.png" >                
+      <img src="http://zjshop.tcpan.com/mex/fish/img/yu-6-3.png" >              
+      <img src="http://zjshop.tcpan.com/mex/fish/img/yu-8.png" >
+      <img src="http://zjshop.tcpan.com/mex/fish/img/bg.png" >                  
+      <img src="http://zjshop.tcpan.com/mex/fish/img/guanxian-1.png" >          
+      <img src="http://zjshop.tcpan.com/mex/fish/img/num-9.png" >               
+      <img src="http://zjshop.tcpan.com/mex/fish/img/yu-4-2.png" >              
+      <img src="http://zjshop.tcpan.com/mex/fish/img/yu-6.png" >
+      <img src="http://zjshop.tcpan.com/mex/fish/img/bizhikuang.png" >          
+      <img src="http://zjshop.tcpan.com/mex/fish/img/loading-bg.png" >          
+      <img src="http://zjshop.tcpan.com/mex/fish/img/rule-butn.png" >          
+      <img src="http://zjshop.tcpan.com/mex/fish/img/yu-4.png" >                
+      <img src="http://zjshop.tcpan.com/mex/fish/img/yu-7-2.png" >
+      <img src="http://zjshop.tcpan.com/mex/fish/img/butn-rule-home.png" >      
+      <img src="http://zjshop.tcpan.com/mex/fish/img/muban.png" >               
+      <img src="http://zjshop.tcpan.com/mex/fish/img/rule.jpg" >                
+      <img src="http://zjshop.tcpan.com/mex/fish/img/yu-5-2.png" >              
+      <img src="http://zjshop.tcpan.com/mex/fish/img/yu-7-3.png" >
+      <img src="http://zjshop.tcpan.com/mex/fish/img/butn-tuoguan.png" >        
+      <img src="http://zjshop.tcpan.com/mex/fish/img/num-0.png" >               
+      <img src="http://zjshop.tcpan.com/mex/fish/img/tuoguan.png" >             
+      <img src="http://zjshop.tcpan.com/mex/fish/img/yu-5-3.png" >              
+      <img src="http://zjshop.tcpan.com/mex/fish/img/yu-7.png" >
+      <img src="http://zjshop.tcpan.com/mex/fish/img/chugan-bg.png" >           
+      <img src="http://zjshop.tcpan.com/mex/fish/img/num-3.png" >               
+      <img src="http://zjshop.tcpan.com/mex/fish/img/yu-1-2.png" >              
+      <img src="http://zjshop.tcpan.com/mex/fish/img/yu-5.png" >                
+      <img src="http://zjshop.tcpan.com/mex/fish/img/yu-8-2.png" >
     </div>
     <!-- built files will be auto injected -->
   <script type="text/javascript" src="/hldy/static/js/vendor.js"></script><script type="text/javascript" src="/hldy/static/js/app.js"></script></body>

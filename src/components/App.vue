@@ -569,9 +569,9 @@
                     // setTimeout(function(){ //定时器 防止鱼竿还没下来 鱼就跑来了
                     console.log(res);
                     ajaxResponseTime = +new Date();
-                    self.timeGetedTotal = Math.ceil(Number(res.JB) * 100);
-                    self.currentTotalGetedZs = Math.ceil(Number(res.ZS) * 100);
-                    self.currentTotalGeted = Math.ceil(Number(res.totalGold) * 100);
+                    self.timeGetedTotal = Math.ceil(Number(res.data.JB) * 100);
+                    self.currentTotalGetedZs = Math.ceil(Number(res.data.ZS) * 100);
+                    self.currentTotalGeted = Math.ceil(Number(res.data.totalGold) * 100);
                     if (res.code == 0) {
                         self.lotteryId = res.data.fish;
                         self.caishenCanShow = res.isCaiShen;
@@ -933,7 +933,7 @@
                     }
                 }, 600)
             },
-            processMove(el, complete) { //过程中 切换鱼 做运动动画
+            processMove(el, complete) { //过程中 切换鱼 做运动动画 需要优化
                 var self = this,
                     _type = $(el).attr('data-type'),
                     _index = $(el).attr('data-index'),
