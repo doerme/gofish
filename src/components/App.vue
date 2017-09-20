@@ -92,7 +92,7 @@
         <!-- 选择抽奖金额  -->
         <div class="tips-mask" @click="hideBettingTips" v-show="bettingTipsShow"></div>
         <div class="bottom-tips" v-show="bettingTipsShow">
-            <p v-for="item in bettingJinbi" @click="selectBetting" :betting="item"> <img :src="jinbiSeleted" class="icon-seleted" v-show="item == currentBetting"> <img :src="jinbi" class="icon-jinbi"> {{item}}</p>
+            <p v-for="item in bettingJinbi" @click="selectBetting" :betting="item"> <img :src="jinbiSeleted" class="icon-seleted" v-show="item == currentBetting"> <img :src="zuanshiicon" class="icon-jinbi"> {{item}}</p>
         </div>
         <!-- 宝箱  -->
         <div class="baoxiang-1" v-show="ganOver48Flag">
@@ -151,6 +151,7 @@
     import fish8B from '../assets/yu-8-2.png';
     import fish8C from '../assets/yu-8-3.png';
     import jinbi from '../assets/jinbi-3.png';
+    import zuanshiicon from '../assets/zuanshi.png';
     import jinbiSeleted from '../assets/jinbi-seleted.png';
     import chuganTxt from '../assets/chugan-txt.png';
     import plus from '../assets/plus.png';
@@ -239,6 +240,7 @@
             return {
                 head,
                 fish1,
+                zuanshiicon,
                 jinbi,
                 jinbiSeleted,
                 chuganTxt,
@@ -534,10 +536,10 @@
                 self.currentGetedFishList = [];
                 self.currentTimeBettingFish = [];
     
-                if (self.myJinbi < self.currentBetting) { //不够金币钓鱼
+                if (self.myZs < self.currentBetting) { //不够钻石钓鱼
                     this.autoFlag = false;
                     this.autoGoTo = false;
-                    MessageBox.alert('不够金币了！快去充值吧').then(action => {
+                    MessageBox.alert('不够钻石了！快去充值吧').then(action => {
                         if (action == 'confirm') {
                             location.href = '/user/usercenter';
                         }
@@ -545,8 +547,8 @@
                     return;
                 }
                 this.yuganClass = "yugan-block active";
-                this.myJinbi -= this.currentBetting;
-                $('#js-dy-jinbi').html(this.myJinbi);
+                this.myZs -= this.currentBetting;
+                $('#js-dy-zs').html(this.myZs);
     
                 self.lotteryId = [];
                 self.currentGetedFishList = [];
@@ -1907,7 +1909,7 @@
         top: 0;
         width: 73px;
         height: 70px;
-        background: url('../assets/jinbi-2.png') no-repeat top left;
+        background: url('../assets/zuanshi.png') no-repeat top left;
         background-size: 73px;
     }
     

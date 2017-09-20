@@ -76,7 +76,7 @@
   <script type="text/javascript" src="/caishen/js/caishen.js?v=129"></script> -->
   <script src="//cbd.tcpan.com/cdn/caishen/js/zepto.min.js"></script>
   <script src="//zjshop.tcpan.com/mex/caishen/caishen.js"></script>
-  <script type="text/javascript" src="/mex/fish/js/vendor.js?v=133"></script>
+  <script type="text/javascript" src="/mex/fish/js/vendor.js?v=135"></script>
   <script type="text/javascript" src="/mex/fish/js/app.js?v=135"></script>  
   </body>
 </html>
